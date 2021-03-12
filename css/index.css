@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --main-color: #DD2F6E;
+  --main-color: #1f2933;
   --dark-color: #1D2231;
   --gray-color: #8390A2;
   --white-color: #fff;
-  --gray-light-color: #f1f5f1;
+  --gray-light-color: #323F4b;
 }
 
 * {
@@ -19,6 +19,7 @@
 }
 
 body {
+  background: var(--main-color);
   font-family: 'Poppins';
 }
 
@@ -69,7 +70,7 @@ ul {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #323F4b;
   transition: .2s linear;
 }
 
@@ -78,11 +79,12 @@ ul {
 }
 
 .aside .aside__item--active {
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
+  background: #3E4C59;
 }
 
 .aside .aside__item--active .aside__link {
-  color: var(--main-color);
+  color: #fff;
   font-weight: 600;
 }
 
@@ -109,9 +111,10 @@ ul {
   padding: 20px 50px;
   width: 100%;
   display: flex;
+  color: #fff;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 2px 5px 2px #ccc;
+  box-shadow: 2px 2px 5px 2px var(--main-color);
 }
 
 .main__logo {
@@ -133,11 +136,15 @@ ul {
   width: 250px;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #3E4C59;
   border: none;
   border-radius: 50px;
-  box-shadow: 0 0 5px 1px #ccc;
+  box-shadow: 0 0 5px 1px #3E4C59;
   padding: 0 15px;
+}
+
+.main__search .main__input::placeholder{
+  color: #fff;
 }
 
 .main__search .main__input {
@@ -147,12 +154,12 @@ ul {
   font: 12px 'Poppins';
   border: none;
   background: transparent;
-  color: #777;
+  color: #fff;
 }
 
 .main__search-icon {
   font-size: 15px;
-  color: #999;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -200,16 +207,21 @@ ul {
   padding: 20px;
   height: 130px;
   width: 240px;
-  box-shadow: 0 0 5px 1px #eee;
-  background: #fff;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .main__card:nth-child(even) {
+  box-shadow: 0 0 5px 1px var(--main-color);
   background: var(--main-color);
   color: #fff;
+}
+
+.main__card:nth-child(odd){
+  background: #3E4C59;
+  box-shadow: 0 0 5px 1px #3E4C59;
 }
 
 .main__card:nth-child(odd) .main__card-icon {
@@ -232,7 +244,9 @@ ul {
   margin-top: 30px;
   padding: 50px;
   width: 60%;
-  background: #fff;
+  background:var(--main-color);
+  box-shadow: 0 0 5px 1px var(--main-color);
+  color: #fff;
 }
 
 .recent__header,
@@ -246,7 +260,7 @@ ul {
 .recent__link,
 .customers__link {
   padding: 7px 15px;
-  background: var(--main-color);
+  background: #323F4b;
   font-size: 13px;
   font-weight: 300;
   border-radius: 5px;
@@ -260,8 +274,8 @@ ul {
 
 .recent__table tr:nth-child(1) th {
   padding-bottom: 15px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
 }
 
 .bullet {
@@ -272,11 +286,11 @@ ul {
 }
 
 .bullet--review {
-  background: #241124;
+  background: yellow;
 }
 
 .bullet--inprogress {
-  background: var(--main-color);
+  background: red;
 }
 
 .bullet--pending {
@@ -309,8 +323,9 @@ ul {
   padding: 50px 30px;
   width: 37%;
   margin-top:30px;
-  background: #fff;
-  box-shadow: 0 0 5px 1px #eee;
+  background: var(--main-color);
+  box-shadow: 0 0 5px 1px var(--main-color);
+  color: #fff;
 }
 
 .customers__item {
@@ -334,7 +349,7 @@ ul {
 
 .customers__job {
   font-size: 12px;
-  color: #777;
+  color: #616E7C;
 }
 
 .customers__user {
@@ -342,7 +357,7 @@ ul {
 }
 
 .customers__icon {
-  color: var(--main-color);
+  color: #616E7C;
 }
 
 .aside__content {
