@@ -184,7 +184,8 @@ ul {
   padding: 50px;
 }
 
-.recent__header {
+.recent__header,
+.customers__header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -192,12 +193,14 @@ ul {
   color: #fff;
 }
 
-.recent__title {
+.recent__title ,
+.customers__title{
   font-size: 25px;
   letter-spacing: 1px;
 }
 
-.recent__link {
+.recent__link,
+.customers__link {
   color: #fff;
   background-color: var(--main-color);
   border-radius: 5px;
@@ -248,4 +251,119 @@ ul {
 
 .bullet--pending {
   background-color: mediumspringgreen;
+}
+
+.customers__item {
+  margin: 20px 0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customers__information {
+  display: flex;
+  align-items: center;
+}
+
+.customers__image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.customers__name {
+  font-size: 15px;
+  color: #fff;
+}
+
+.customers__information div {
+  margin-left: 15px;
+}
+
+.customers__desc {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.customers__icon {
+  color: var(--gray-color);
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.main--blur {
+  opacity: .5;
+  filter: blur(20px);
+}
+
+/* ASIDE */
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--secondary-dark-color);
+  height: 100%;
+  width: 0;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.aside__close {
+  color: #fff;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  font-size: 50px;
+}
+
+.aside__nav {
+  margin-top: 120px;
+  width: 100%;
+}
+
+.aside__footer {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.aside__subtext {
+  font-size: 15px;
+}
+
+.aside__social  {
+  padding: 10px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.aside__item {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 25px 40px;
+  width: 95%;
+  margin-left: auto;
+}
+
+.aside__item--active {
+  background: var(--secondary-color);
+}
+
+.aside__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.aside__icon {
+  display: inline-block;
+  font-size: 30px;
+  margin-right: 10px;
 }
