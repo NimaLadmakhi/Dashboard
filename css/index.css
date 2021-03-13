@@ -150,6 +150,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 5px 1px var(--secondary-dark-color);
 }
 
 .main__card-number {
@@ -163,4 +164,88 @@ ul {
 
 .main__card-icon {
   font-size: 50px;
+}
+
+.main__body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.recent,
+.customers {
+  background-color: var(--secondary-dark-color);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px var(--secondary-dark-color);
+  margin: 20px 0;
+  width: 100%;
+  padding: 50px;
+}
+
+.recent__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.recent__title {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.recent__link {
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  padding: 15px 25px;
+}
+
+
+.recent__body {
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.recent__body tr:first-child th {
+  padding: 40px 0;
+  border-top: 1px solid var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.recent__body tr:nth-child(2) td {
+  padding-top: 30px;
+}
+
+.recent__body tr:nth-child(n + 3) td{
+  padding-top: 15px;
+}
+
+.recent__bullet {
+  display: flex;
+  align-items: center;
+}
+
+.bullet {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-right: 20px;
+}
+
+.bullet--review {
+  background-color: yellow;
+}
+
+.bullet--inprogress {
+  background-color: orangered;
+}
+
+.bullet--pending {
+  background-color: mediumspringgreen;
 }
