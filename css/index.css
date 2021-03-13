@@ -362,8 +362,158 @@ ul {
   font-size: 25px;
 }
 
-.aside__icon {
+.aside__list-icon {
   display: inline-block;
   font-size: 30px;
   margin-right: 10px;
+}
+
+
+
+
+@media (min-width:1000px) and (max-width:1300px) {
+  .aside {
+    width: 10%;
+  }
+  
+  .aside__item {
+    padding: 30px 50px;
+  }
+  
+  .aside__close {
+    display: none;
+  }
+  
+  .main {
+    margin: unset;
+    margin-left: auto!important;
+    margin-right: 45px;
+    width: 82%;
+  }
+  
+  .aside__text,
+  .aside__footer {
+    display: none;
+  }
+}
+
+@media all and (min-width:1300px) {
+  .aside {
+    width: 18%;
+  }
+
+.main__header {
+  margin: 20px 0 0 0;
+}
+  
+  .aside__nav {
+    margin: 55px 0;
+  }
+  
+  .main__bar {
+    background: transparent;
+  }
+  
+  .aside__item {
+    padding: 10px;
+  }
+  
+  .aside__close {
+    display: none;
+  }
+  
+  .aside__footer {
+    width: 80%;
+  }
+  
+  .aside__subtext {
+    font-weight: 100;
+    font-size: 12px;
+  }
+  
+  .aside__social {
+    padding: 20px 0;
+  }
+  
+  .aside__list-icon {
+    font-size: 15px;
+  }
+  
+  .aside__link {
+    font: 300 15px 'Poppins';
+  }
+  
+  .main {
+    margin: unset;
+    margin-left: auto!important;
+    margin-right: 45px;
+    width: 77%;
+  }
+  
+  .main__card {
+    width: 24%;
+    height: 130px;
+    padding: 0 20px;
+  }
+  
+  .main__card-desc {
+    font-size: 12px;
+  }
+  
+  .main__card-number {
+    font-size: 35px;
+  }
+  
+  .recent {
+    width: 65%;
+  }
+  
+  .main__body {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .customers {
+    width: 33%;
+  }
+  
+  .customers__link,
+  .recent__link {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  
+  .customers__title,
+  .recent__title {
+    font-size: 17px;
+  }
+  
+  .customers,
+  .recent {
+    margin: 0;
+    padding: 30px;
+  }
+  
+  .customers__name {
+    font-size: 13px;
+  }
+  
+  .customers__desc {
+    font-size: 10px;
+  }
+  
+  .recent__body tr:first-child th {
+    padding: 20px 0;
+  }
+  
+  .recent__body th,
+  .recent__body td {
+    font-size: 15px;
+  }
+  
+  .customers__icon {
+    font-size: 15px;
+    margin: 0;
+  }
 }
